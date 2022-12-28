@@ -1,0 +1,194 @@
+.triple-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 5px;
+}
+
+body{
+    font-family: cursive;
+    font-size: 1rem;
+    min-height: 100%;
+    
+}
+.logo{
+    width: 100px;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-top: 0%;
+    padding: 0%;
+}
+.logo:hover{
+    box-shadow: -1px 1px 7px 0px rgba(189, 97, 192, 0.973);
+}
+.logo2{
+    width: 50px;
+    border-radius: 100px;
+    margin-left: 60%;
+}
+.logo2:hover{
+    box-shadow: -1px 1px 7px 0px rgb(135, 71, 160);
+}
+.grid-container > *{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer";
+}
+h1{
+    color: brown;
+}
+.header {
+    grid-area: header;
+    background-image: url('Marca de Agua Café Colao.png');
+    background-size: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(160, 105, 161);
+}
+.uno{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    max-width: 110px;
+    padding-top: 10px;
+}
+.uno:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.dos{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    max-width: 110px;
+    padding-top: 10px;
+}
+.dos:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.tres{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    max-width: 110px;
+    padding-top: 10px;
+}
+.tres:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.cuatro{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    max-width: 110px;
+    padding-top: 10px;
+}
+.cuatro:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.navbar {
+    grid-area: navbar;
+    background-color:  rgb(135, 71, 160);
+    background-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+}
+.imgnav{
+    width: 100px;
+    border-radius: 20px;
+}
+.logo3{
+    width: 400px;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-image: url('Granos de café 2.jpg');
+    background-size: cover;
+    text-align: justify;
+    color: antiquewhite;
+    text-shadow: 1px 1px green;
+}
+.main {
+    grid-area: main;
+    background-image: url('Parrilla 1.jpg');
+    background-size: cover;
+    background-position-x: left;
+
+}
+.imgmain{
+    height: 100px;
+    border-radius: 100px;
+}
+.imgmain:hover{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+}
+.footer {
+    grid-area: footer;
+    background-image: url('Granos de café 1.jpg');
+    background-size: 120px;
+    background-position-y: start;
+}
+
+@media (min-width:600px){
+    .grid-container{
+        grid-gap: 20px;
+        grid-template: 
+        "header  header" 115px
+        "navbar  navbar" auto
+        "sidebar main"   auto 
+        "footer  footer" 70px/
+        200px    auto;
+        overflow-y: scroll;
+    }
+}
+@media (min-width:900px){
+    .grid-container{
+        grid-template: 
+        "header  header header"  115px
+        "navbar  main   sidebar" auto
+        "footer  footer footer"  200px/
+        150px    auto    200px;
+        overflow-y: scroll;
+    }
+    .navbar {
+        grid-area: navbar;
+        grid-template: 
+        "uno"       100px
+        "dos"       100px
+        "tres"      100px
+        "cuatro"    100px;
+        grid-row-gap: 20px;
+    }
+}
+
+.consultas{
+    width: 25%;
+    display: inline-block;
+}
+
+.variedades{
+    width: 25%;
+    float: right;
+}
+.tecnología{
+    width: 25%;
+    display: inline-block;
+}
+.fisica{
+    width: 25%;
+    float: right;
+}
+.redes{
+    width: 100%;
+}
